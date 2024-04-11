@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
+    
     private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 16f;
