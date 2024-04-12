@@ -60,9 +60,10 @@ public class PlayerMovment : MonoBehaviour
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            //Dont do this, if we need to flip the sprite use spriteRenderer.flipX = true;
+            //Vector3 localScale = transform.localScale;
+            //localScale.x *= -1f;
+            //transform.localScale = localScale;
         }
 
 

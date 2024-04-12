@@ -29,9 +29,12 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] private bool bowDelay;
 
+    
+
     private GameObject currentArrow;
 
     private Vector2 vectorSword;
+    private Vector3 swordStabDirection;
 
     // Start is called before the first frame update
     void Start()
@@ -79,15 +82,16 @@ public class Weapon : MonoBehaviour
         position.z = 5;
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(position);
 
-        sword.transform.position = worldPos;    
+        //sword.transform.position = worldPos;    
 
         Debug.Log(Input.mousePosition);
 
         vectorSword = (Vector2)transform.position - worldPos;
+        
         if (state == WeaponState.Sword)
         {
 
-            sword.transform.right = vectorSword;
+            sword.transform.right = - vectorSword;
             //sword.transform.rotation = Quaternion.LookRotation(vectorSword);
         }
 
@@ -107,23 +111,24 @@ public class Weapon : MonoBehaviour
             }
         }
 
+        swordStabDirection = vectorSword.normalized;
         if (swordStabing == true)
         {
             float stabSpeed = swordSpeed * Time.deltaTime;
             swordTimer += Time.deltaTime;
             if (swordTimer < swordTime / 2)
             {
-                actualSword.transform.position += Vector3.right * stabSpeed;
+                actualSword.transform.position -= swordStabDirection * stabSpeed;
             }
             else if (swordTimer > swordTime)
             {
                 swordStabing = false;
                 swordTimer = 0;
-                actualSword.transform.position = Vector3.zero;
+                actualSword.transform.localPosition = Vector3.right;
             }
             else
             {
-                actualSword.transform.position -= Vector3.right * stabSpeed;
+                actualSword.transform.position += swordStabDirection * stabSpeed;
 
             }
         }
