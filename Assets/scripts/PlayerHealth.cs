@@ -29,7 +29,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void GameOver()
     {
+
         Debug.Log("you lose haha");
+        Time.timeScale = 0;
         gameOver.SetActive(true);
         //displayes game over screen
     }

@@ -41,9 +41,9 @@ public class Movementv2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 cameraForward = cameraMovement.cameraForward;
-        cameraForward.y = 0f;
-        transform.forward = cameraForward;
+        /////Vector3 cameraForward = cameraMovement.cameraForward;
+        /////cameraForward.y = 0f;
+        /////transform.forward = cameraForward;
         //if (Input.GetButtonDown("Jump"))
         //{
         //    playerVelocity.y += Mathf.Sqrt(jumpHeight * -6.0f * gravityValue);
