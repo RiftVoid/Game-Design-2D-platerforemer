@@ -16,7 +16,14 @@ public class Weapon : MonoBehaviour
 
     }
 
+    enum ArrowDirection
+    {
+        left,
+        right,
+    }
+
     [SerializeField] private WeaponState state;
+    [SerializeField] private ArrowDirection arrowDirection;
     [SerializeField] private GameObject sword;
     [SerializeField] private GameObject actualSword;
     [SerializeField] private GameObject bow;
@@ -28,10 +35,13 @@ public class Weapon : MonoBehaviour
     [SerializeField] private bool swordStabing;
 
     [SerializeField] private bool bowDelay;
+    [SerializeField] private float arrowSpeed;
+
 
     private GameObject currentArrow;
 
     private Vector2 vectorSword;
+    private Vector3 swordStabDirection;
 
     // Start is called before the first frame update
     void Start()
@@ -50,13 +60,13 @@ public class Weapon : MonoBehaviour
         //Sets sword or bow active
         if (state == WeaponState.Sword)
         {
-            sword.SetActive(true);
+            actualSword.SetActive(true);
             bow.SetActive(false);
 
         }
         else if (state == WeaponState.Bow)
         {
-            sword.SetActive(false) ;
+            actualSword.SetActive(false) ;
             bow.SetActive(true) ;
         }
 
@@ -79,15 +89,16 @@ public class Weapon : MonoBehaviour
         position.z = 5;
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(position);
 
-        sword.transform.position = worldPos;    
+        //sword.transform.position = worldPos;    
 
-        Debug.Log(Input.mousePosition);
+        //Debug.Log(Input.mousePosition);
 
         vectorSword = (Vector2)transform.position - worldPos;
+        
         if (state == WeaponState.Sword)
         {
 
-            sword.transform.right = vectorSword;
+            sword.transform.right = - vectorSword;
             //sword.transform.rotation = Quaternion.LookRotation(vectorSword);
         }
 
@@ -102,31 +113,56 @@ public class Weapon : MonoBehaviour
             }
             else if (state == WeaponState.Bow && bowDelay == false)
             {
+
                 currentArrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
                 bowDelay = true;
             }
         }
-
+        //Debug.Log(sword.transform.right*Vector2.right);
+        if ((sword.transform.right * Vector2.right).x <= 0)
+        {
+            
+            //Debug.Log("is facing left");
+            
+            arrowDirection = ArrowDirection.left;
+        }
+        else
+        {
+            //Debug.Log("is facing right");
+           
+            arrowDirection = ArrowDirection.right;
+        }
+        swordStabDirection = vectorSword.normalized;
         if (swordStabing == true)
         {
             float stabSpeed = swordSpeed * Time.deltaTime;
             swordTimer += Time.deltaTime;
             if (swordTimer < swordTime / 2)
             {
-                actualSword.transform.position += Vector3.right * stabSpeed;
+                actualSword.transform.position -= swordStabDirection * stabSpeed;
             }
             else if (swordTimer > swordTime)
             {
                 swordStabing = false;
                 swordTimer = 0;
-                actualSword.transform.position = Vector3.zero;
+                actualSword.transform.localPosition = Vector3.right;
             }
             else
             {
-                actualSword.transform.position -= Vector3.right * stabSpeed;
+                actualSword.transform.position += swordStabDirection * stabSpeed;
 
             }
         }
+
+        if (arrowDirection == ArrowDirection.right && currentArrow != null)
+        {
+            currentArrow.transform.position += arrowSpeed * Vector3.right * Time.deltaTime;
+        }
+        else if (arrowDirection == ArrowDirection.left && currentArrow != null)
+        {
+            currentArrow.transform.position += arrowSpeed * Vector3.left * Time.deltaTime;
+        }
+
 
         if (currentArrow == null) 
         {
