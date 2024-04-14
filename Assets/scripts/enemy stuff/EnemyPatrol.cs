@@ -60,4 +60,15 @@ public class EnemyPatrol : MonoBehaviour
         Gizmos.DrawWireSphere(pointB.transform.position, 0.5f);
         Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
     }
+
+   
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("sword"))
+        {
+            //Debug.Log("get rekt noob");
+            Destroy(transform.parent.gameObject);
+        }
+    }
 }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8813820201794166749}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4671808383651826403}
   - component: {fileID: 1700462975883478247}
   - component: {fileID: 2179844437558342935}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: spear pole
   m_TagString: death
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 8054930639717618907}
   - component: {fileID: 2603256997815582293}
   - component: {fileID: 5502531674911088571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spear_Walking_Enemy_SpriteSheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 8245618493688605379}
   - component: {fileID: 7850963401501204917}
   - component: {fileID: 1400168101255176356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: spear head
   m_TagString: death
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8762511085020733689}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 693901896272149}
   - component: {fileID: 3158062627795555397}
   - component: {fileID: 5159396077873558370}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 1218840411458028188}
   - component: {fileID: 8271456921492056064}
   - component: {fileID: 4455892309503798134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sheild
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,8 +655,8 @@ Transform:
   m_GameObject: {fileID: 8129021892205993521}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.07, y: 0.17, z: 0}
-  m_LocalScale: {x: -0.2392, y: 1.7736338, z: 1}
+  m_LocalPosition: {x: 1.274, y: 0.226, z: 0}
+  m_LocalScale: {x: -6.0675573, y: 8.0726595, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4498060061137915706}
@@ -702,12 +702,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 148183006814c2148bc2f5459ed27247, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -745,18 +745,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.036894683, y: 0.0066553876}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.076155804, y: 0.29009187}
   m_EdgeRadius: 0
 --- !u!1 &8346211716200356999
 GameObject:
@@ -767,7 +767,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3785099204987625010}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sheild enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

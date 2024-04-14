@@ -10,7 +10,7 @@ public class PlayerMovment : MonoBehaviour
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
-    public SpriteRenderer sprite;
+    public SpriteRenderer spriteRenderer;
     public Animator anim;
 
     [SerializeField] private Rigidbody2D rb;
@@ -91,7 +91,8 @@ public class PlayerMovment : MonoBehaviour
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-            //Dont do this, if we need to flip the sprite use spriteRenderer.flipX = true;
+            //Dont do this, if we need to flip the sprite use spriteRendererspriteRenderer.flipX = true;
+            spriteRenderer.flipX = true;
             //Vector3 localScale = transform.localScale;
             //localScale.x *= -1f;
             //transform.localScale = localScale;

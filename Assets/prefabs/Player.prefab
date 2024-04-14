@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9702b4cc23be204e8473a574701e741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 8846026747982281383}
+  spriteRenderer: {fileID: 8846026747982281383}
   anim: {fileID: 3362520578315438271}
   rb: {fileID: 2523454660478788674}
   GroundCheck: {fileID: 8397270467797471122}
@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  arrowDirection: 0
   sword: {fileID: 4129277706803578334}
   actualSword: {fileID: 1600368804804896970}
   bow: {fileID: 4175445002561590491}
@@ -306,6 +307,7 @@ MonoBehaviour:
   swordTimer: 0
   swordStabing: 0
   bowDelay: 0
+  arrowSpeed: 0
 --- !u!1 &4175445002561590491
 GameObject:
   m_ObjectHideFlags: 0

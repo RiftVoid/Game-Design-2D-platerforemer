@@ -17,4 +17,14 @@ public class Arrow : MonoBehaviour
     {
         arrow.transform.localPosition += arrowSpeed * Vector3.right * Time.deltaTime;
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("ground"))
+        {
+            Destroy(gameObject);
+        }
+        
+    }
 }

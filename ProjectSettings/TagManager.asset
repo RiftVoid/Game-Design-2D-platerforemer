@@ -7,6 +7,8 @@ TagManager:
   - death
   - enemy
   - flag
+  - ground
+  - sword
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - Death
   - flag
   - 
-  - 
-  - 
-  - 
+  - enemy
+  - shield
+  - sword
   - 
   - 
   - 
