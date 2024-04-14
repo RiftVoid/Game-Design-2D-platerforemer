@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4dcf3771bd25a724d9a337bf723e1bd4
+guid: 8363c35aae2db8c4ebc236f072f378a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,181 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c49eb1fc622b2c47b8d8e1100eea008
-      internalID: 1648019817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4961207c89dac564f915dc0ffc781757
-      internalID: 2026508056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b71068f8e8a8b346a3b8fd90d0beb59
-      internalID: -860726757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f245d951ce37017449f462edaff4e666
-      internalID: -1104117359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1db464b77f4db9e4b94669c22669be69
-      internalID: -1020182841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82974ae44bd30cd4e815991d3f39e6d0
-      internalID: -1917237015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37fdacf8ced4f8244b1fe271b98ebf99
-      internalID: -865721132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bee144abcc29f841b225fb24aa218a3
-      internalID: -1600579030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_8
+      name: SwordEnemy_SpritesSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9120d151d3da8314680870866676d2e7
-      internalID: -672938784
+      spriteID: 749732179f0cd93488a6c692fec9a964
+      internalID: 953972389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_9
+      name: SwordEnemy_SpritesSheet_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 0
-        width: 64
-        height: 64
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,8 +158,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b59ef2c7c553166479942eff434a13f6
-      internalID: -328947580
+      spriteID: c88b2fb7e3d7507438940451dbb9f4b9
+      internalID: -1519204648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnemy_SpritesSheet_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d51260beea7754f8b2415cc6189055
+      internalID: -272224772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordEnemy_SpritesSheet_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b333c17aa1a912f42b53dedc9dea95b6
+      internalID: -558820178
       vertices: []
       indices: 
       edges: []
@@ -343,16 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SLime_Player_Arrow-Sheet_0: 1648019817
-      SLime_Player_Arrow-Sheet_1: 2026508056
-      SLime_Player_Arrow-Sheet_2: -860726757
-      SLime_Player_Arrow-Sheet_3: -1104117359
-      SLime_Player_Arrow-Sheet_4: -1020182841
-      SLime_Player_Arrow-Sheet_5: -1917237015
-      SLime_Player_Arrow-Sheet_6: -865721132
-      SLime_Player_Arrow-Sheet_7: -1600579030
-      SLime_Player_Arrow-Sheet_8: -672938784
-      SLime_Player_Arrow-Sheet_9: -328947580
+      SwordEnemy_SpritesSheet_0: 953972389
+      SwordEnemy_SpritesSheet_1: -1519204648
+      SwordEnemy_SpritesSheet_2: -272224772
+      SwordEnemy_SpritesSheet_3: -558820178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4dcf3771bd25a724d9a337bf723e1bd4
+guid: b4fd8c13e91ae6b4d8b5027e4fe25f11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,181 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c49eb1fc622b2c47b8d8e1100eea008
-      internalID: 1648019817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4961207c89dac564f915dc0ffc781757
-      internalID: 2026508056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b71068f8e8a8b346a3b8fd90d0beb59
-      internalID: -860726757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f245d951ce37017449f462edaff4e666
-      internalID: -1104117359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1db464b77f4db9e4b94669c22669be69
-      internalID: -1020182841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82974ae44bd30cd4e815991d3f39e6d0
-      internalID: -1917237015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37fdacf8ced4f8244b1fe271b98ebf99
-      internalID: -865721132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bee144abcc29f841b225fb24aa218a3
-      internalID: -1600579030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_8
+      name: Spear_Walking_Enemy_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 79
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9120d151d3da8314680870866676d2e7
-      internalID: -672938784
+      spriteID: d8bef023919e4e344903fd62e4d9762f
+      internalID: 1310525018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SLime_Player_Arrow-Sheet_9
+      name: Spear_Walking_Enemy_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 79
         y: 0
-        width: 64
-        height: 64
+        width: 79
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,8 +158,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b59ef2c7c553166479942eff434a13f6
-      internalID: -328947580
+      spriteID: 607a768f50ffae04ea2adf2ecc21a316
+      internalID: -1803179231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spear_Walking_Enemy_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbf35d105ae36349981fb6c79b388f3
+      internalID: -282129468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spear_Walking_Enemy_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c2afb1a66f8694886b9366b4c8a5ca
+      internalID: 1874129913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spear_Walking_Enemy_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08bdf85eb91fbb488c7d936c51ea59d
+      internalID: 325827030
       vertices: []
       indices: 
       edges: []
@@ -343,16 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SLime_Player_Arrow-Sheet_0: 1648019817
-      SLime_Player_Arrow-Sheet_1: 2026508056
-      SLime_Player_Arrow-Sheet_2: -860726757
-      SLime_Player_Arrow-Sheet_3: -1104117359
-      SLime_Player_Arrow-Sheet_4: -1020182841
-      SLime_Player_Arrow-Sheet_5: -1917237015
-      SLime_Player_Arrow-Sheet_6: -865721132
-      SLime_Player_Arrow-Sheet_7: -1600579030
-      SLime_Player_Arrow-Sheet_8: -672938784
-      SLime_Player_Arrow-Sheet_9: -328947580
+      Spear_Walking_Enemy_SpriteSheet_0: 1310525018
+      Spear_Walking_Enemy_SpriteSheet_1: -1803179231
+      Spear_Walking_Enemy_SpriteSheet_2: -282129468
+      Spear_Walking_Enemy_SpriteSheet_3: 1874129913
+      Spear_Walking_Enemy_SpriteSheet_4: 325827030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

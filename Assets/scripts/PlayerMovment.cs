@@ -10,9 +10,14 @@ public class PlayerMovment : MonoBehaviour
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
+    public SpriteRenderer sprite;
+    public Animator anim;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    private enum MovementState { idle, move, jump }
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +28,9 @@ public class PlayerMovment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        UpdateAnimationState();
+
         // lets uninty know that the player is pressing A or D 
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -39,6 +47,29 @@ public class PlayerMovment : MonoBehaviour
         }
 
         Flip();
+
+    }
+
+    private void UpdateAnimationState()
+    {
+        MovementState state;
+
+        if ((horizontal > 0f) || (horizontal < 0f))
+        {
+           state = MovementState.move;        
+        }
+        else
+        {
+            state = MovementState.idle;
+        }
+
+        if (!IsGrounded())
+        {
+            state = MovementState.jump;
+        }
+   
+
+        anim.SetInteger("state", (int)state);
 
     }
 
